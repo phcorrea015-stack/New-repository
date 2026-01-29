@@ -1,44 +1,47 @@
 export default function Hero() {
   return (
-    <section style={{
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      textAlign: 'center',
-      gap: '20px'
-    }}>
-      <h1 style={{
-        fontSize: '64px',
-        color: '#7c3aed'
-      }}>
-        Daniel Silva
-      </h1>
+    <section className="hero">
+      <div className="hero-content">
+        <h1>Daniel Silva</h1>
 
-      <h2 style={{
-        fontSize: '28px',
-        fontWeight: 'normal'
-      }}>
-        Editor de Reels para negócios
-      </h2>
+        <h2>
+          Editor de <span>Reels</span> para Negócios
+        </h2>
 
-      <p style={{
-        fontSize: '20px',
-        maxWidth: '600px',
-        opacity: 0.85
-      }}>
-        Transformo vídeos curtos em atenção, autoridade e clientes no Instagram.
-      </p>
+        <p>
+          Transformo vídeos curtos em atenção, autoridade
+          e clientes no Instagram.
+        </p>
 
-      <a
-        href="https://wa.me/5500000000000"
-        target="_blank"
-        className="whatsapp"
-      >
-        Falar comigo no WhatsApp
-      </a>
+        <a
+          href="https://wa.me/5599999999999"
+          target="_blank"
+          className="whatsapp-button"
+        >
+          Falar comigo no WhatsApp
+        </a>
+      </div>
+
+      <div className="hero-visual">
+        <div className="glow" />
+        <div className="<div className="hero-visual">
+  <div className="glow" />
+
+  <div className="frame camera">
+    <div className="camera-ui">
+      <span className="rec">● REC</span>
+      <span className="time">00:12</span>
+    </div>
+
+    <div className="camera-center">
+      <span>Preview do Reel</span>
+    </div>
+  </div>
+</div>
+">
+          <span>SEU VÍDEO AQUI</span>
+        </div>
+      </div>
     </section>
   )
 }
-
