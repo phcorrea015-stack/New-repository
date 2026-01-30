@@ -1,5 +1,106 @@
+:root {
+  --bg: #0b0b10;
+  --purple: #7c3aed;
+  --purple-glow: rgba(124, 58, 237, 0.4);
+  --text: #f5f5f7;
+  --muted: #a1a1aa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: red !important;
+  background: radial-gradient(
+    circle at top,
+    rgba(124, 58, 237, 0.15),
+    var(--bg) 60%
+  );
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 8vw;
+  gap: 4rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.hero-content h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.hero-content h2 span {
+  color: var(--purple);
+}
+
+.hero-content p {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  max-width: 480px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--purple), #a855f7);
+  color: white;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 30px var(--purple-glow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 45px var(--purple-glow);
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  width: 320px;
+  height: 560px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #111, #000);
+  border: 2px solid rgba(124, 58, 237, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-weight: 600;
+  box-shadow: 0 0 60px var(--purple-glow);
+}
+
+.glow {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, var(--purple), transparent 70%);
+  filter: blur(80px);
+  opacity: 0.5;
+  z-index: -1;
 }
 
 

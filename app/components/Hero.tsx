@@ -23,25 +23,13 @@ export default function Hero() {
       </div>
 
       <div className="hero-visual">
-        <div className="glow" />
-        <div className="<div className="hero-visual">
-  <div className="glow" />
+        <div className="glow"></div>
 
-  <div className="frame camera">
-    <div className="camera-ui">
-      <span className="rec">● REC</span>
-      <span className="time">00:12</span>
-    </div>
-
-    <div className="camera-center">
-      <span>Preview do Reel</span>
-    </div>
-  </div>
-</div>
-">
+        <div className="frame camera">
           <span>SEU VÍDEO AQUI</span>
         </div>
       </div>
     </section>
-  )
+  );
 }
+
