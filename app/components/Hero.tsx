@@ -3,6 +3,11 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-content">
         <h1>Daniel Silva</h1>
+<img
+  src="/images/daniel.png"
+  alt="Daniel Silva"
+  className="hero-image"
+/>
 
         <h2>
           Editor de <span>Reels</span> para Negócios
